@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,69 +8,169 @@
     <title>Cadastro Dev</title>
     <style>
         @charset "UTF-8";
-        
-        @font-face{
-            font-family: 'game';
-            src: url(game_over/game_over.ttf) format('opetype');
 
-        }
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        body{
-           
+
+        body {
+            margin-top: 50px;
+            background-color: rgb(2, 2, 2);
+        }
+        nav{
+            
+            margin: 20px;
+            padding:50px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            text-align: center;
+            text-shadow: 2px 2px 0px #ff9900;
+            background-color: black;
+            border: 2px dashed #ff9900;
             
         }
-        form{
-            display: flex;
-            width: 100vw;
-            height: 100vw;
-            justify-content: center;
-            align-items: center;
-            color: rgb(36, 151, 12);
+         a{
+            height: 20px;
+            width: 20px;
+            padding:5px;
+            text-decoration: none;
+            color: white;
+            border: 2px dashed #ff9900;
+
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px #ff9900;
+        }
+
+        #form {
+            text-align: center;
+            min-height: 150px;
+            padding-top: 50px;
+            font-size: 1.5em;
+            max-width: 600px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 60px;
+            margin: auto;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+            color: white;
             border-radius: 20px;
-            
+            border: 5px dashed #ff9900;
+
         }
+
+        .label {
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 0px #ff9900;
+
+            padding: 5px;
+        }
+
+        .input {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            width: 200px;
+            padding: 5px;
+            background: #b5b5b5;
+            border: 2px dashed #ff9900;
+
+        }
+
+        .input-botao {
+            
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 0px #ff9900;
+            padding: 8px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            background: #0e0d0d;
+            color: #ffffff;
+            border: 1px dashed #ff9900;
+
+        }
+
+        .msg {
+            display:block;
+            height: 200px;
+            width: 400px;
+            padding:5px;
+            margin: 15px auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            background: #666363;
+            color: #ffffff;
+            border: 2px dashed #ff9900;
+        }
+        #roda-pe{
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            text-align: center;
+            text-shadow: 2px 2px 0px #ff9900;
+            background-color: #666363;
+            border: 2px dashed #ff9900;
+            text-decoration: none;
+
+            
+
+        }
+
+
+        
     </style>
 </head>
+
 <body>
-    <form action="">
-        <div>
-            <h1>Digite os dados do usuário</h1>
+    <header>
+        <nav>
+            <a href="">Desafio #1</a>
+            <a href="">Desafio #2</a>
+            <a href="">Desafio #3</a>
+            <a href="">Desario #4</a>
+        </nav>
+    </header>
 
-            <div>
-                Nome:<input type="text"
-                 id="nome"
-                  name="nome" 
-                  placeholder="Insira seu nome">
-            </div>
-            <div>
-                Idade:<input type="text"
-                id="idade"
-                name="idade" 
-                placeholder="Insira seu idade">
-            </div>
-            <div>
-                Skills:<input type="text"
-                id="skills"
-                name="skills" 
-                placeholder="o que faz de melhor"> 
-            </div>
-           
-            <div>
-                <input type="button" value="Cadastrar + um Dev"></div>
+    <form action="" id="form" method="post" name="form">
+
+        <h1>Digite os dados do usuário</h1>
+
+        <div id="input-nome">
+            <div class="label"><label for="nome"> Nome:</label></div>
+            <input type="text" id="nome" class="input" name="nome" placeholder="Insira seu nome">
         </div>
-        <div>
 
+        <div id="input-idade">
+            <div class="label"><label for="idade"> Idade:</label></div>
+            <input type="text" id="idade" class="input" name="idade" placeholder="Insira sua idade">
+        </div>
+
+        <div id="input-skills">
+            <div class="label"><label for="skills"> Skills:</label></div>
+            <input type="text" id="skills" class="input" name="skills" placeholder="o que faz de melhor">
+        </div>
+
+        <div id="input-botao">
+            <input class="input-botao" type="button" value="Cadastrar +1 Dev">
+        </div>
+
+
+        <div class="msg">
+            texto
         </div>
 
     </form>
-    <footer>
-        <p>desafio do discor feito por <a href="#">Elly Dennis</a> </p>
+
+    <footer id="roda-pe">
+        <p>Desafio do discor de Ballerine feito por <a id="link-footer" href="#">Elly Dennis</a> </p>
     </footer>
 
-    
-    
+
+
 </body>
+
 </html>
